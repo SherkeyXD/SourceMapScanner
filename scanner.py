@@ -441,7 +441,7 @@ class SourceMapScannerPro:
         if self.url_index is not None:
             domain = self._get_domain(self.base_url)
             safe_domain = "".join(c if c.isalnum() or c in '-_.' else '_' for c in domain)
-            download_path = base_download_path / f"{self.url_index:03d}_{safe_domain}"
+            download_path = base_download_path / safe_domain
         else:
             download_path = base_download_path
             
@@ -511,7 +511,7 @@ class SourceMapScannerPro:
         if self.url_index is not None:
             domain = self._get_domain(self.base_url)
             safe_domain = "".join(c if c.isalnum() or c in '-_.' else '_' for c in domain)
-            download_path = base_download_path / f"{self.url_index:03d}_{safe_domain}"
+            download_path = base_download_path / safe_domain
         else:
             download_path = base_download_path
         
