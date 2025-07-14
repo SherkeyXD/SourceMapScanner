@@ -1,0 +1,14 @@
+[project]
+name = "sourcemap-scanner"
+version = "1.0.0"
+description = "用于扫描是否有 SourceMap 泄露的工具"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiohttp>=3.12.14",
+    "click>=8.2.1",
+    "nest-asyncio>=1.6.0",
+    "playwright>=1.53.0",
+    "pydantic>=2.11.7",
+    "rich>=14.0.0",
+]
